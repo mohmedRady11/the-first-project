@@ -1,0 +1,354 @@
+*{
+box-sizing: border-box;
+margin: 0;
+
+}
+body{
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+background-color: var(--groundcolor);
+}
+
+:root{
+  --groundcolor:white;
+  --maincolor:#eee;
+  --smallcolor:black;
+  --font-family: cursive;
+  --hovercolor:white;
+  --cardcolor:#eee;
+  --card2color:rgb(0, 255, 242);
+  --colorhover:black;
+  --border:2px solid black;
+  --shadow:4px 3px 4px 0px darkslategray;
+}
+
+ /*----------- the header----------- */
+ 
+.header{
+ 
+  background-color: var(--maincolor);
+  color: var(--smallcolor);
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  position: fixed;
+  border-bottom:2px solid black ;
+  cursor: move;
+  z-index: 1000;
+}
+.logo{
+  text-decoration: none;
+  color: var(--smallcolor);
+  font-size: 35px;
+  font-weight: 700;
+  font-family: var(--font-family);
+  margin-left: 100px;
+}
+
+.link{
+  text-decoration: none;
+  color: var(--smallcolor);
+  font-size: 15px;
+  font-weight: 700;
+  font-family: var(--font-family);
+  margin-left: 30px;
+  transition: .3s;
+}
+.link:hover{
+color: var(--hovercolor);
+}
+.link1{
+  margin-left: calc((100% - 800px) / 2);
+}
+
+.bottom-link{
+  background-color: black;
+  color: white;
+  padding: 10px 40px;
+  margin-left: calc((100% - 700px) / 2) ;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: .3s;
+  
+}
+.bottom-link:hover{
+color: var(--colorhover);
+background-color: var(--hovercolor);
+border: var(--border);
+}
+
+
+/* -------------the end header--------------- */
+
+
+/* -----------------the contant1------------- */
+h1{
+  position: absolute;
+  margin-top: 194px;
+  font-family: var(--font-family);
+  font-size: 52px;
+  margin-left: 82px;
+  font-weight: lighter;
+}
+h4{
+  position: absolute;
+  margin-top: 300px;
+  font-family: var(--font-family);
+  font-size: 15px;
+  margin-left: 90px;
+  font-weight: lighter;
+}
+.bottom-order{
+  background-color: black;
+  color: white;
+  padding: 10px 40px;
+  margin-left: 90px;
+  margin-top: 450px;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: .3s;
+  position: absolute;
+}
+.bottom-order:hover{
+  color: var(--colorhover);
+  background-color: var(--hovercolor);
+  border: var(--border);
+}
+#contant1{
+  width: 100%;
+  height: 800px;
+  transition: .3s;
+}
+.sub-ground{
+  margin-top: 150px;
+  width: 30%;
+  height: 450px;
+  margin-left: 60%;
+  border-radius: 6px;
+  box-shadow: var(--shadow);
+  transition:.4s;
+}
+.sub-ground:hover{
+  box-shadow: 0 0 13px 1px black;
+  
+}
+/* ------------the end contant1------------ */
+#about{
+  width: 100%;
+  height: 700px;
+  transition: 2s;
+}
+.note-the-best{
+  position: absolute;
+  margin-top: 2px;
+  font-family: var(--font-family);
+  font-size: 52px;
+  margin-left: 82px;
+  font-weight: lighter;
+}
+
+.note-car{
+  position: absolute;
+  margin-top: 110px;
+  font-family: var(--font-family);
+  font-size: 15px;
+  margin-left: 90px;
+  font-weight: lighter;
+}
+.note22{
+  margin-top: 245px;
+}
+
+.the-best-car{
+  margin-top: 0px;
+  width: 37%;
+  height: 430px;
+  margin-left: 60%;
+  border-radius: 6px;
+  box-shadow: var(--shadow);
+  transition:.4s;
+}
+.the-best-car:hover{
+  box-shadow: 0 0 13px 1px black;
+  
+}
+#about-2{
+  margin-top: -140px;
+  position: absolute;
+}
+/* ------------------------ the collection card -------------------- */
+#contant2{
+  width: 100%;
+  height: 700px;
+}
+#Rady-collection{
+  position: absolute;
+  margin-top: -160px;
+}
+.note-h1{
+  font-size: 52px;
+  margin-left: 430px;
+  margin-top: -90px;
+}
+.note{
+  position: absolute;
+  font-family: var(--font-family);
+  font-weight: lighter;
+}
+.note2{
+  font-size: 20px;
+  margin-left: 621px;
+  margin-top: -23px;
+  color: darkolivegreen;
+}
+
+.contaner{
+  width: calc((100% - 150px) / 4);
+  height: 200px;
+  float: left;
+  margin-left: 30px;
+  margin-top: 30px;
+
+
+}
+.box{
+  position: relative;
+  width: 100%;
+  height: 200px;
+  transform-style: preserve-3d;
+  transition: 1s .1s;
+ 
+}
+.face{
+  border-radius: 6px;
+  width: 100px;
+  height: 100px;
+
+}
+.box .face{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.box .front{
+  background-color: var(--cardcolor);
+  color: var(--groundcolor);
+
+}
+.box .back{
+  background-color: var(--smallcolor);
+  color: var(--groundcolor);
+  transform: rotateY(180deg);
+}
+.car-card{
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  box-shadow: var(--shadow);
+}
+.box:hover{
+  transform: rotateY(-180deg);
+}  
+.kind-car{
+  margin-top: 30px;
+  font-size: 20px;
+  margin-left: 44px;
+}
+.prise-car{
+  margin-left: 35px;
+  margin-top: 119px;
+}
+.over-car{
+  margin-top: -22px;
+  margin-left: 144px;
+  opacity: .8;
+  text-decoration: line-through;
+  padding: 5px 40px;
+  background-color: orangered;
+  border-radius: 2px;
+}
+
+/* -- -----------the end contant2---------------  */
+
+
+/* ----------------------the footer-------------- */
+.footer{
+  position: relative;
+  width: 90%;
+  margin-left: 5%;
+  height: 200px;
+  background-color: var(--maincolor);
+  border-radius:6px;
+  box-shadow: 1px -1px 11px 3px darkslategray;
+}
+.img-link-footer{
+  margin-left: 60px;
+  border-radius: 50%;
+}
+.contlink{
+  position: absolute;
+  margin-left: 450px;
+  margin-top: 35px;
+  height: 53px;
+  width: 185px 
+}
+.Ilink{
+  margin-top: 17px;
+  margin-left: 17px;
+  position: absolute;
+  background-color: var(--groundcolor);
+  padding: 10px;
+  border-radius: 50%;
+  transition: .5s ;
+}
+.Ilink:hover{
+  background-color: var(--maincolor);
+  box-shadow: 0 0 3px 1px black;
+}
+.info{
+  margin-top: 74px;
+  width: 170px;
+  margin-left: 75px;
+  font-family:var(--font-family);
+}
+.policy{
+  margin-top: 95px;
+  width: 225px;
+  margin-left: 61px;
+  font-family:var(--font-family);
+}
+h5{
+  margin-top: 100px;
+  font-family: var(--font-family);
+  opacity: .8;
+  margin-left: 88px;
+  font-weight: 100;
+  width: 163px;
+}
+.contaner-footer-card{
+  width: 274px;
+  height: 160px;
+  position: absolute;
+  margin-left: 460px;
+  margin-top: -14px;
+}
+.footer-card{
+  width: 160px;
+  height: 160px;
+  margin-left: 20px;
+}
+.img-footer{
+  width: 40px;
+  height: 40px;
+  box-shadow: 1px 1px 5px 0 black;
+  transition: .3s;
+  border-radius: 6px;
+}
+.img-footer:hover{
+  box-shadow: 0 0 13px 1px black;
+}
+/* ---------------the end footer------------- */
+
+
+
+

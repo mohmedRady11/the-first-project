@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    
+    }
+    body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(245, 242, 242);
+    }
+    
+    :root{
+      --groundcolor:white;
+      --maincolor:#eee;
+      --smallcolor:black;
+      --font-family: cursive;
+      --hovercolor:white;
+      --cardcolor:#eee;
+      --card2color:rgb(0, 255, 242);
+      --colorhover:black;
+      --border:2px solid black;
+      --shadow:4px 3px 4px 0px darkslategray;
+    }
+    .contaner-regster{
+        width: calc((100% - 40%) /1);
+        height: 400px;
+        margin-left: 20%;
+        background-color: var(--maincolor);
+        border-radius: 6px;
+        margin-top: 80px;
+        box-shadow: 0px 0px 4px 0px black;
+    } 
+    h1{
+        position: absolute;
+        font-family: var(--font-family);
+        font-size: 40px;
+        font-weight: lighter;
+        margin-left: 185px;
+        margin-top: 15px 
+    } 
+    .feld{
+        padding: 10px 56px;
+        border-radius: 25px;
+        border: .5px solid black;
+    }  
+    .feld:hover{
+        border: var(--border);
+    
+    }
+    .f1{
+        margin-left: 280px;
+        margin-top: 105px;
+        position: absolute;
+    }
+    .f2{
+        margin-left: 280px;
+        margin-top: 170px;
+        position: absolute;
+    }
+    .f3{
+        margin-left: 280px;
+        margin-top: 232px;
+        position: absolute;
+    }
+    .but-regster{
+        margin-left: 310px;
+        margin-top: 293px;
+        position: absolute;
+        padding: 10px 92px;
+        border-radius: 6px;
+        background-color: var(--smallcolor);
+        color: var(--groundcolor);
+        transition: .3s;
+    }
+    .but-regster:hover{
+        color: var(--colorhover);
+        background-color: var(--hovercolor);
+        border: var(--border);
+    }
+    .to-login{
+        margin-left: 390px;
+        margin-top: 338px;
+        position: absolute;
+        text-decoration: none;
+        color: var(--smallcolor);
+    }
+    .to-login:hover{
+        text-decoration: underline;
+    }    
